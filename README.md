@@ -4,7 +4,7 @@
 
 This is not a slide deck or a design mockup. It is a working Next.js application that shows how I would actually run AI support operations — what I would monitor, how I would diagnose failures, how I would drive cross-functional action, and how I would measure whether anything got better.
 
-[Live demo →](http://localhost:3000) · [Run locally](#run-locally)
+[Live demo →](https://viloljoshi.github.io/Bolt-ops-lead-review/) · [Run locally](#run-locally)
 
 ## Why I built this
 

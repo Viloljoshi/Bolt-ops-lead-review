@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Activity, Search, RefreshCw, TrendingUp, ArrowRight, Zap } from 'lucide-react';
+import PortfolioCTA from '@/components/PortfolioCTA';
 
 const pillars = [
   {
@@ -102,26 +103,29 @@ export default function LandingPage() {
           A decision system for monitoring, diagnosing, and improving AI support quality at global scale.
         </p>
 
-        <Link
-          href="/dashboard"
-          style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: 10,
-            background: 'var(--bolt-green)',
-            color: '#fff',
-            padding: '14px 28px',
-            borderRadius: 12,
-            fontWeight: 700,
-            fontSize: 15,
-            letterSpacing: '-0.01em',
-            textDecoration: 'none',
-          }}
-        >
-          <Zap size={16} />
-          Open Command Center
-          <ArrowRight size={16} />
-        </Link>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
+          <Link
+            href="/dashboard"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 10,
+              background: 'var(--bolt-green)',
+              color: '#fff',
+              padding: '14px 28px',
+              borderRadius: 12,
+              fontWeight: 700,
+              fontSize: 15,
+              letterSpacing: '-0.01em',
+              textDecoration: 'none',
+            }}
+          >
+            <Zap size={16} />
+            Open Command Center
+            <ArrowRight size={16} />
+          </Link>
+          <PortfolioCTA />
+        </div>
 
         <div
           style={{
