@@ -6,8 +6,6 @@ This is not a slide deck or a design mockup. It is a working Next.js application
 
 [Live demo →](http://localhost:3000) · [Run locally](#run-locally)
 
----
-
 ## Why I built this
 
 The job description asked for someone who can operate AI agents at scale, drive improvement across product and engineering teams, and maintain quality across global markets.
@@ -24,7 +22,6 @@ This prototype simulates the Monday morning command center my team would use to 
 
 The goal was to build something a Bolt hiring team could open, click through, and immediately understand how I think.
 
----
 
 ## What I'm trying to demonstrate
 
@@ -88,7 +85,6 @@ Identifying a problem is the easy part. I built the entire loop:
 
 The Feedback Loop system and Improvement Backlog together demonstrate that every fix has a hypothesis (which metric should improve), an owner, a due date, and a success criterion. Fixes without measurement are guesses.
 
----
 
 ## Pages and what each one reveals
 
@@ -103,7 +99,6 @@ The Feedback Loop system and Improvement Backlog together demonstrate that every
 | **Improvement Backlog** | Kanban from signal to impact, sprint integration, outcome tracking |
 | **Market / Vertical Drilldown** | Market-specific health, issue patterns, recommended actions |
 
----
 
 ## What I would do with this in production
 
@@ -119,7 +114,6 @@ The Feedback Loop system and Improvement Backlog together demonstrate that every
 
 The architecture is deliberately structured so that each mock data file maps directly to a Supabase table. Swapping the data layer requires changing one import per page, not rebuilding the system.
 
----
 
 ## Markets and verticals in the mock data
 
@@ -129,7 +123,6 @@ The architecture is deliberately structured so that each mock data file maps dir
 
 **Issue categories:** Refund Request, Driver Cancellation, Wrong Charge, Delayed Food Order, Account Verification, Safety Complaint, Lost Item, Promo Code Issue, Payout Delay, Vehicle Unlock Issue
 
----
 
 ## Run locally
 
@@ -140,7 +133,6 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000)
 
----
 
 ## Tech stack
 
@@ -154,7 +146,6 @@ Open [http://localhost:3000](http://localhost:3000)
 | Design | Bolt brand system — Jungle Green `#34BB78`, Charade `#2C2D33` |
 | Data | Mock JSON (structured for Supabase drop-in) |
 
----
 
 ## One thing I want to leave you with
 

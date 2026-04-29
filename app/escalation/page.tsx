@@ -237,6 +237,7 @@ export default function EscalationPage() {
 
             {/* Per-market regulatory table */}
             <div
+              className="r-table-wrap"
               style={{
                 background: 'var(--surface)',
                 border: '1px solid var(--line)',
@@ -298,7 +299,7 @@ export default function EscalationPage() {
                   AI-Specific Compliance Guardrails Alfred Must Respect
                 </span>
               </div>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 10 }}>
+              <div className="r-grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 10 }}>
                 {complianceRules.map((rule, i) => {
                   const rc = riskColors[rule.risk] ?? riskColors.Medium;
                   return (

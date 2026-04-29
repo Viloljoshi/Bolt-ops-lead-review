@@ -108,6 +108,7 @@ export default function AutomationPage() {
 
         {/* Portfolio table */}
         <div
+          className="r-table-wrap"
           style={{
             background: 'var(--surface)',
             border: '1px solid var(--line)',

@@ -278,7 +278,7 @@ export default function DiagnosisPage() {
         </div>
 
         {/* Failure type distribution */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 24 }}>
+        <div className="r-grid-2" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 24 }}>
           <div
             style={{
               background: 'var(--surface)',
@@ -377,6 +377,7 @@ export default function DiagnosisPage() {
           <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--charade)', letterSpacing: '-0.02em', marginBottom: 16 }}>
             Top Failure Patterns
           </div>
+          <div className="r-table-wrap">
           <table style={{ width: '100%', borderCollapse: 'collapse' }}>
             <thead>
               <tr>
@@ -464,6 +465,7 @@ export default function DiagnosisPage() {
               })}
             </tbody>
           </table>
+          </div>
         </div>
 
         {/* Failure Mode Quick Reference */}
@@ -485,7 +487,7 @@ export default function DiagnosisPage() {
               Which failure modes are silent killers vs. noisy but obvious. Silent killers require proactive monitoring — they won&apos;t surface in dashboards until damage is done.
             </div>
           </div>
-          <div style={{ overflowX: 'auto' }}>
+          <div className="r-table-wrap">
             <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: 700 }}>
               <thead>
                 <tr>

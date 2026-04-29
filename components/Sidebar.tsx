@@ -24,11 +24,17 @@ const navItems = [
   { href: '/drilldown', label: 'Market Drilldown', icon: Globe },
 ];
 
-export default function Sidebar() {
+interface SidebarProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+export default function Sidebar({ isOpen, onClose }: SidebarProps) {
   const pathname = usePathname();
 
   return (
     <aside
+      className={`sidebar-nav ${isOpen ? 'sidebar-nav--open' : ''}`}
       style={{
         width: 240,
         minWidth: 240,
@@ -42,6 +48,7 @@ export default function Sidebar() {
         top: 0,
         zIndex: 100,
         overflowY: 'auto',
+        transition: 'transform 0.22s cubic-bezier(0.4, 0, 0.2, 1)',
       }}
     >
       {/* Logo */}
@@ -84,6 +91,24 @@ export default function Sidebar() {
             AI Ops Command
           </div>
         </div>
+        {/* Mobile close button */}
+        <button
+          onClick={onClose}
+          aria-label="Close navigation"
+          style={{
+            display: 'none',
+            background: 'transparent',
+            border: 'none',
+            cursor: 'pointer',
+            color: 'var(--muted)',
+            padding: 4,
+            borderRadius: 6,
+            marginLeft: 'auto',
+          }}
+          className="sidebar-close-btn"
+        >
+          ✕
+        </button>
       </div>
 
       {/* Nav */}

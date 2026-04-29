@@ -57,3 +57,89 @@ body {
   font-size: 12px !important;
   padding: 10px 14px !important;
 }
+
+/* ===== RESPONSIVE LAYOUT ===== */
+
+/* Hamburger button — hidden on desktop */
+.hamburger-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  cursor: pointer;
+  color: var(--charade);
+  flex-shrink: 0;
+}
+
+/* Sidebar overlay backdrop */
+.sidebar-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(44,45,51,0.45);
+  z-index: 99;
+  backdrop-filter: blur(2px);
+}
+.sidebar-backdrop.active { display: block; }
+
+/* Responsive grid utilities — use className alongside inline styles */
+.r-grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); }
+.r-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); }
+.r-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); }
+.r-grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); }
+
+/* Horizontal scroll wrapper for wide tables/kanban */
+.r-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.r-table-wrap > * { min-width: 680px; }
+
+/* ===== BREAKPOINTS ===== */
+
+/* Tablet (≤1100px) */
+@media (max-width: 1100px) {
+  .r-grid-5 { grid-template-columns: repeat(3, 1fr) !important; }
+  .r-grid-4 { grid-template-columns: repeat(2, 1fr) !important; }
+  .r-grid-3 { grid-template-columns: repeat(2, 1fr) !important; }
+}
+
+/* Small tablet / large mobile (≤768px) */
+@media (max-width: 768px) {
+  .hamburger-btn { display: flex; }
+
+  .r-grid-5 { grid-template-columns: repeat(2, 1fr) !important; }
+  .r-grid-4 { grid-template-columns: repeat(2, 1fr) !important; }
+  .r-grid-3 { grid-template-columns: 1fr !important; }
+  .r-grid-2 { grid-template-columns: 1fr !important; }
+
+  main[data-shell] { padding: 16px !important; }
+}
+
+/* Mobile (≤480px) */
+@media (max-width: 480px) {
+  .r-grid-5 { grid-template-columns: 1fr !important; }
+  .r-grid-4 { grid-template-columns: 1fr !important; }
+}
+
+/* Content area — push right of sidebar on desktop, full width on mobile */
+@media (max-width: 900px) {
+  .content-area { margin-left: 0 !important; }
+  .filter-pill { display: none !important; }
+  .date-badge { display: none !important; }
+}
+
+@media (max-width: 900px) {
+  .sidebar-nav {
+    transform: translateX(-240px);
+  }
+  .sidebar-nav.sidebar-nav--open {
+    transform: translateX(0);
+    box-shadow: 4px 0 24px rgba(20,22,28,0.18);
+  }
+}
+
+@media (max-width: 900px) {
+  .sidebar-close-btn { display: block !important; }
+}

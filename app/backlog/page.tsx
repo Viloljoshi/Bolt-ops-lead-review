@@ -216,6 +216,7 @@ export default function BacklogPage() {
 
         {/* Kanban board */}
         <div
+          className="r-table-wrap"
           style={{
             display: 'grid',
             gridTemplateColumns: `repeat(${COLUMNS.length}, minmax(200px, 1fr))`,

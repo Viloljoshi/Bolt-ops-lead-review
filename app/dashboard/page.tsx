@@ -322,6 +322,7 @@ export default function DashboardPage() {
 
         {/* Metric cards */}
         <div
+          className="r-grid-5"
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(5, 1fr)',
@@ -335,7 +336,7 @@ export default function DashboardPage() {
         </div>
 
         {/* Charts */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 24 }}>
+        <div className="r-grid-2" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 24 }}>
           {/* Weekly Trend */}
           <div
             style={{
@@ -418,7 +419,7 @@ export default function DashboardPage() {
               What Alfred&apos;s standard metrics won&apos;t surface. A senior AI Ops lead checks these weekly.
             </div>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+          <div className="r-grid-2" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
 
             {/* Card 1: Confidence Calibration Risk */}
             <div style={{ background: 'var(--surface)', border: '1px solid var(--line)', borderRadius: 14, padding: '18px 20px', boxShadow: '0 1px 4px rgba(20,22,28,0.04)' }}>

@@ -315,7 +315,7 @@ export default function WeeklyReviewPage() {
             <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--charade)', letterSpacing: '-0.02em', marginBottom: 14 }}>
               This Week's Movement
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10 }}>
+            <div className="r-grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10 }}>
               {metricChanges.map(({ label, val, change, suffix = '', invert }) => {
                 const isGood = invert ? change < 0 : change > 0;
                 const isUp = change > 0;
@@ -430,7 +430,7 @@ export default function WeeklyReviewPage() {
           </div>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 16 }}>
+        <div className="r-grid-2" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 16 }}>
           {/* Decision log */}
           <div
             style={{
