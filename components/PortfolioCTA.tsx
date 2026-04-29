@@ -2,7 +2,7 @@
 
 import { User, ArrowRight } from 'lucide-react';
 
-const PORTFOLIO_URL = 'https://viloljoshi.github.io/portfolio-bolt/';
+const PORTFOLIO_URL = 'https://viloljoshi.github.io/Vilol-joshiBLT/';
 
 export default function PortfolioCTA() {
   return (
