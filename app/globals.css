@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --bolt-green: #34BB78;
+  --bolt-green-700: #1F8A56;
+  --bolt-green-50: #E7F6EE;
+  --bolt-mint: #CFF0DA;
+  --bolt-mint-soft: #E6F7EC;
+  --charade: #2C2D33;
+  --charade-soft: #3A3B41;
+  --athens-gray: #EFF1F4;
+  --line: #E5E7EC;
+  --line-soft: #EFF1F4;
+  --muted: #6B6E78;
+  --muted-2: #9CA0A9;
+  --surface: #FFFFFF;
+  --surface-2: #FAFAFB;
+  --red: #E5484D;
+  --red-50: #FCEAEB;
+  --amber: #F5A623;
+  --amber-50: #FEF1DD;
+  --blue: #2F6FEB;
+  --blue-50: #E6EFFD;
+  --violet: #7A5AF8;
+  --violet-50: #EFEAFE;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background: var(--athens-gray);
+  color: var(--charade);
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.011em;
+  font-feature-settings: "cv11","ss01","ss03";
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--line); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--muted-2); }
+
+.recharts-default-tooltip {
+  background: var(--surface) !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 12px 32px -8px rgba(20,22,28,.12) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 12px !important;
+  padding: 10px 14px !important;
+}

@@ -1,0 +1,142 @@
+{
+  "global": {
+    "automation_resolution_rate": 71.4,
+    "automation_resolution_target": 78.0,
+    "automation_resolution_change": -2.1,
+    "escalation_rate": 18.3,
+    "escalation_rate_target": 15.0,
+    "escalation_rate_change": 1.8,
+    "fcr": 64.2,
+    "fcr_target": 72.0,
+    "fcr_change": -1.4,
+    "csat": 3.8,
+    "csat_target": 4.2,
+    "csat_change": -0.2,
+    "override_rate": 9.1,
+    "override_rate_target": 6.0,
+    "override_rate_change": 0.7,
+    "reopen_rate": 11.4,
+    "reopen_rate_target": 8.0,
+    "reopen_rate_change": 1.2,
+    "compliance_block_rate": 4.2,
+    "compliance_block_rate_change": 0.3,
+    "avg_resolution_time": 4.7,
+    "avg_resolution_time_target": 3.5,
+    "avg_resolution_time_change": 0.4,
+    "tool_error_rate": 6.8,
+    "tool_error_rate_change": 1.1,
+    "cost_deflection_weekly": 14200,
+    "cost_deflection_change": -820,
+    "trusted_automation_score": 67.3,
+    "trusted_automation_target": 76.0,
+    "trusted_automation_change": -1.8
+  },
+  "weekly_trend": [
+    { "week": "Mar 31", "automation": 73.5, "escalation": 16.4, "fcr": 66.1, "csat": 4.0, "reopen": 10.1, "override": 8.2, "trusted_auto": 69.2 },
+    { "week": "Apr 7",  "automation": 74.1, "escalation": 16.0, "fcr": 65.8, "csat": 4.0, "reopen": 10.4, "override": 8.5, "trusted_auto": 69.8 },
+    { "week": "Apr 14", "automation": 73.0, "escalation": 16.9, "fcr": 65.1, "csat": 3.9, "reopen": 10.9, "override": 8.8, "trusted_auto": 68.5 },
+    { "week": "Apr 21", "automation": 72.1, "escalation": 17.6, "fcr": 64.8, "csat": 3.8, "reopen": 11.1, "override": 9.0, "trusted_auto": 67.9 },
+    { "week": "Apr 28", "automation": 71.4, "escalation": 18.3, "fcr": 64.2, "csat": 3.8, "reopen": 11.4, "override": 9.1, "trusted_auto": 67.3 }
+  ],
+  "by_market": [
+    {
+      "market": "Estonia", "code": "EE", "flag": "🇪🇪",
+      "automation": 78.2, "escalation": 13.1, "fcr": 71.4, "csat": 4.2,
+      "reopen": 8.9, "override": 6.8, "compliance_blocks": 2.1, "avg_time": 3.8,
+      "trusted_auto": 76.1, "health_score": 84, "tool_error": 3.2,
+      "top_failures": ["Logic Fault", "UX Tone"], "status": "healthy"
+    },
+    {
+      "market": "Poland", "code": "PL", "flag": "🇵🇱",
+      "automation": 64.3, "escalation": 27.8, "fcr": 55.1, "csat": 3.1,
+      "reopen": 18.2, "override": 14.2, "compliance_blocks": 5.1, "avg_time": 6.2,
+      "trusted_auto": 52.4, "health_score": 51, "tool_error": 7.1,
+      "top_failures": ["Logic Fault", "Knowledge Gap"], "status": "critical"
+    },
+    {
+      "market": "Kenya", "code": "KE", "flag": "🇰🇪",
+      "automation": 69.1, "escalation": 19.4, "fcr": 62.3, "csat": 3.6,
+      "reopen": 12.8, "override": 10.1, "compliance_blocks": 4.2, "avg_time": 5.1,
+      "trusted_auto": 63.8, "health_score": 68, "tool_error": 5.9,
+      "top_failures": ["Knowledge Gap", "Classification Error"], "status": "degraded"
+    },
+    {
+      "market": "Nigeria", "code": "NG", "flag": "🇳🇬",
+      "automation": 61.8, "escalation": 28.9, "fcr": 54.7, "csat": 3.3,
+      "reopen": 16.4, "override": 13.8, "compliance_blocks": 3.8, "avg_time": 6.8,
+      "trusted_auto": 55.2, "health_score": 57, "tool_error": 6.2,
+      "top_failures": ["Knowledge Gap", "Logic Fault"], "status": "critical"
+    },
+    {
+      "market": "India", "code": "IN", "flag": "🇮🇳",
+      "automation": 70.4, "escalation": 18.8, "fcr": 63.9, "csat": 3.7,
+      "reopen": 11.9, "override": 9.4, "compliance_blocks": 3.9, "avg_time": 4.8,
+      "trusted_auto": 65.1, "health_score": 70, "tool_error": 5.4,
+      "top_failures": ["Classification Error", "Knowledge Gap"], "status": "degraded"
+    },
+    {
+      "market": "South Africa", "code": "ZA", "flag": "🇿🇦",
+      "automation": 72.1, "escalation": 17.3, "fcr": 65.8, "csat": 3.9,
+      "reopen": 10.6, "override": 8.2, "compliance_blocks": 3.4, "avg_time": 4.4,
+      "trusted_auto": 68.4, "health_score": 74, "tool_error": 4.8,
+      "top_failures": ["Classification Error", "UX Tone"], "status": "stable"
+    },
+    {
+      "market": "Germany", "code": "DE", "flag": "🇩🇪",
+      "automation": 68.4, "escalation": 21.6, "fcr": 61.2, "csat": 3.5,
+      "reopen": 13.7, "override": 11.4, "compliance_blocks": 6.8, "avg_time": 5.6,
+      "trusted_auto": 61.9, "health_score": 63, "tool_error": 12.4,
+      "top_failures": ["Tool API Failure", "Compliance Blocker"], "status": "degraded"
+    },
+    {
+      "market": "Mexico", "code": "MX", "flag": "🇲🇽",
+      "automation": 66.9, "escalation": 22.8, "fcr": 59.4, "csat": 3.3,
+      "reopen": 14.8, "override": 12.6, "compliance_blocks": 4.9, "avg_time": 5.9,
+      "trusted_auto": 58.7, "health_score": 60, "tool_error": 5.1,
+      "top_failures": ["UX Tone", "Classification Error"], "status": "degraded"
+    }
+  ],
+  "by_vertical": [
+    { "vertical": "Ride-hailing",       "automation": 73.4, "escalation": 16.8, "fcr": 67.2, "csat": 3.9, "reopen": 10.4, "trusted_auto": 70.1, "volume": 38200 },
+    { "vertical": "Food Delivery",      "automation": 69.8, "escalation": 20.4, "fcr": 62.1, "csat": 3.6, "reopen": 13.2, "trusted_auto": 64.8, "volume": 29400 },
+    { "vertical": "Scooter/e-bike",     "automation": 64.2, "escalation": 24.6, "fcr": 57.8, "csat": 3.4, "reopen": 15.8, "trusted_auto": 58.3, "volume": 11200 },
+    { "vertical": "Driver Support",     "automation": 66.1, "escalation": 25.8, "fcr": 56.9, "csat": 3.5, "reopen": 16.4, "trusted_auto": 59.7, "volume": 17800 },
+    { "vertical": "Payments/Refunds",   "automation": 71.4, "escalation": 19.2, "fcr": 63.8, "csat": 3.7, "reopen": 12.1, "trusted_auto": 65.2, "volume": 22600 },
+    { "vertical": "Safety Incidents",   "automation": 38.6, "escalation": 58.4, "fcr": 41.2, "csat": 3.1, "reopen": 8.4,  "trusted_auto": 36.8, "volume": 4800 }
+  ],
+  "by_category": [
+    { "category": "Refund Request",              "volume": 18400, "automation": 69.8, "escalation": 22.1, "csat": 3.6, "fcr": 61.4, "top_failure": "Logic Fault" },
+    { "category": "Driver Cancellation",         "volume": 14200, "automation": 74.2, "escalation": 17.4, "csat": 3.9, "fcr": 67.8, "top_failure": "Classification Error" },
+    { "category": "Wrong Charge",                "volume": 16800, "automation": 68.4, "escalation": 23.8, "csat": 3.5, "fcr": 60.2, "top_failure": "Classification Error" },
+    { "category": "Delayed Food Order",          "volume": 12400, "automation": 71.6, "escalation": 19.6, "csat": 3.7, "fcr": 64.8, "top_failure": "Knowledge Gap" },
+    { "category": "Account Verification",        "volume": 8200,  "automation": 62.4, "escalation": 28.4, "csat": 3.4, "fcr": 55.2, "top_failure": "Tool API Failure" },
+    { "category": "Safety Complaint",            "volume": 4800,  "automation": 38.6, "escalation": 58.4, "csat": 3.1, "fcr": 41.2, "top_failure": "UX Tone" },
+    { "category": "Lost Item",                   "volume": 6400,  "automation": 66.8, "escalation": 24.8, "csat": 3.6, "fcr": 59.4, "top_failure": "Knowledge Gap" },
+    { "category": "Promo Code Issue",            "volume": 9800,  "automation": 76.4, "escalation": 14.8, "csat": 4.0, "fcr": 70.2, "top_failure": "Classification Error" },
+    { "category": "Payout Delay",                "volume": 7600,  "automation": 58.4, "escalation": 34.2, "csat": 3.2, "fcr": 51.8, "top_failure": "Knowledge Gap" },
+    { "category": "Vehicle Unlock Issue",        "volume": 5200,  "automation": 54.2, "escalation": 36.8, "csat": 3.3, "fcr": 48.6, "top_failure": "Tool API Failure" }
+  ],
+  "confidence_distribution": {
+    "resolved": [
+      { "range": "0-0.4", "count": 420 },
+      { "range": "0.4-0.6", "count": 1840 },
+      { "range": "0.6-0.75", "count": 6200 },
+      { "range": "0.75-0.9", "count": 18400 },
+      { "range": "0.9-1.0", "count": 12800 }
+    ],
+    "escalated": [
+      { "range": "0-0.4", "count": 2800 },
+      { "range": "0.4-0.6", "count": 3600 },
+      { "range": "0.6-0.75", "count": 2100 },
+      { "range": "0.75-0.9", "count": 890 },
+      { "range": "0.9-1.0", "count": 410 }
+    ],
+    "reopened": [
+      { "range": "0-0.4", "count": 380 },
+      { "range": "0.4-0.6", "count": 920 },
+      { "range": "0.6-0.75", "count": 1640 },
+      { "range": "0.75-0.9", "count": 2100 },
+      { "range": "0.9-1.0", "count": 980 }
+    ]
+  }
+}
